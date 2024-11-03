@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    background-color: black;
+}
+
+.parallax{
+    position: relative;
+    height: 100vh;
+    
+}
+
+.parallax .audio{
+    position:absolute;
+    top:10px;
+    right:5px;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+
+.parallax .bg{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+
+.stars{
+    position: relative;
+    background-image: url(images/shoot.gif);
+    background-repeat: no-repeat;
+    width:250px;
+    height:250px;
+    background-size: contain;
+}
+
+.parallax .bg-1{
+    background-image: url(images/background1.webp);
+   
+}
+.parallax .bg-3{
+    position: absolute;   
+    top: 60px;            
+    left: 50%;         
+    background-image: url(images/moon.png);
+    background-repeat: no-repeat;
+    border-radius: 60%;
+    width: 100px;  
+    height: 100px;      
+    box-shadow: 0 0 60px 20px #fff;       
+    transition: 0.1s;
+
+    
+}
+.parallax .bg-4{
+    background-image: url(images/forest1png.png);
+    width: 100%; 
+   
+}
+
+
+.parallax .bg-5 .bunnies{
+    position: fixed;              
+    background-image: url(images/cat-static.png);
+    width: 250px;
+    height: 250px;
+    left: 70%;                        
+    bottom: 0;                        
+    transform: translateX(-50%);      
+    background-size: contain;    
+    background-repeat: no-repeat;       
+    background-position: center;      
+    transition: 0.1s;
+
+    
+}
+
+
+
+
+.parallax .bg-5 .bunnies:hover{
+    background-image: url(images/source-resize.gif);
+}
+
+.bg-5 > #hearts{
+    position: absolute;
+    top: 69%;
+    left: 68%;
+    /*background-color: yellow;*/
+    background-image: url(images/hearts.gif);
+    background-repeat: no-repeat;
+    width: 5em;
+    height: 5em;
+    background-size: contain; 
+    
+    
+    /* transform: translateX(-20%); */
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#ppl{
+    display: block;
+    text-align: left;
+}
+
+.parallax h2{
+    position: absolute;  
+    top: 37%;            
+    left: 40%;           
+    transform: translate(-50%, -50%); 
+    font-size: 100px;     
+    color: #132161;        
+    text-align: center;  
+    transition: text-shadow 0.5s ease-in;
+    
+}
+
+.parallax h1{
+    position: absolute;  
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    font-size: 150px;     
+    color: #132161;        
+    text-align: center;  
+    transition: text-shadow 0.5s ease-in;
+    
+}
+
+.glow{
+    /* text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white; */
+    text-shadow: 1px 3px 10px rgba(255,255,255,0.5);
+}
+
+.black{
+    width: 100%;
+    height: 1260px;
+    background-image: url(images/dark);
+    background-repeat: no-repeat;
+    z-index: 999 !important;
+}
+
+.for-flex{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.big-texts{
+    padding-top: 300px;
+    margin-bottom: 0;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    z-index: 999 !important;
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+.txt_display{
+    padding-top: 30px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.qr{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/qr.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:100px;
+    margin-right: 40px;
+    z-index: 999 !important;
+}
+
+.game{
+    width: 400px;
+    height: 400px;
+    background-image: url(images/giphy_bunny.gif);
+    background-size: contain;
+    margin-top:100px;
+    margin-right: 40px;
+    z-index: 999 !important;
+}
+
+
+
+.footer{
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    background-color: #132161;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    bottom: 0;
+}
+
+/* transition: margin-right 2s ease-in-out; */

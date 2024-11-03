@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Redirect</title>
+    <style>
+        #name-Form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-div{
+            position: relative;
+            top:10em;
+        }
+
+        .user-input-name{
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 6rem;
+        }
+
+        .input-field{
+            width: 50%;
+            height: 3em;
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+
+        .submit-button{
+            width: 20%;
+            height: 3em;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            background-color: beige;
+        }
+    </style>
+    <link rel="icon" type="images" href = "images/favicon.png"/>
+</head>
+<body>
+    <div class="form-div">
+        <form id="name-Form">
+            <label for="name" class="user-input-name">Your name?</label>
+            <input type="text" id="name" name="name" class="input-field" autofocus>
+            <button type="submit" class="submit-button">Let's go!</button>
+        </form>
+    </div>
+    
+
+    <script>
+        const form = document.getElementById('name-Form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('name').value;
+            window.location.href = `content.html?nameInput=${encodeURIComponent(nameInput)}`;
+            sessionStorage.setItem('userName', nameInput);
+
+        
+        });
+    </script>
+    
+</body>
+</html>
